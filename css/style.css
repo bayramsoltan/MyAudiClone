@@ -1,13 +1,51 @@
-
+@font-face {
+    font-family: AudiType-Normal;
+    src: local("AudiType-Normal"), url(../fonts/AudiType-Normal.woff2) format("woff2"), url(../fonts/AudiType-Normal.woff) format("woff"), url(../fonts/AudiType-Normal.ttf) format("ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: AudiType-Bold;
+    src: local("AudiType-Bold"), url(../fonts/AudiType-Bold.woff2) format("woff2"), url(../fonts/AudiType-Bold.woff) format("woff"), url(../fonts/AudiType-Bold.ttf) format("ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: AudiType-ExtendedNormal;
+    src: local("AudiType-ExtendedNormal"), url(../fonts/AudiType-ExtendedNormal.woff2) format("woff2"), url(../fonts/AudiType-ExtendedNormal.woff) format("woff"), url(../fonts/AudiType-ExtendedNormal.ttf) format("ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: AudiType-ExtendedBold;
+    src: local("AudiType-ExtendedBold"), url(../fonts/AudiType-ExtendedBold.woff2) format("woff2"), url(../fonts/AudiType-ExtendedBold.woff) format("woff"), url(../fonts/AudiType-ExtendedBold.ttf) format("ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: AudiType-WideNormal;
+    src: local("AudiType-WideNormal"), url(../fonts/AudiType-WideNormal.woff2) format("woff2"), url(../fonts/AudiType-WideNormal.woff) format("woff"), url(../fonts/AudiType-WideNormal.ttf) format("ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: AudiType-WideBold;
+    src: local("AudiType-WideBold"), url(../fonts/AudiType-WideBold.woff2) format("woff2"), url(../fonts/AudiType-WideBold.woff) format("woff"), url(../fonts/AudiType-WideBold.ttf) format("ttf");
+    font-weight: 400;
+    font-style: normal;
+}
 body{
     margin:0;
     padding:0;
     font-family: 'Bai Jamjuree', sans-serif;
 }
+button{
+    padding: 1rem 4rem !important;
+}
 .slider {
     position: relative;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
     background-color: #000;
     color: #fff;
@@ -62,9 +100,6 @@ body{
     font-size: 1.3rem;
     font-weight: 400;
 }
-.slider .content button{
-    padding: 1rem 4rem;
-}
 .slider .content button:hover{
     transition: all 300ms ease-in-out;
     -webkit-transition: all 300ms ease-in-out;
@@ -74,7 +109,7 @@ body{
 }
 
 nav.navbar{
-    background-color: #57515181 !important;
+    background-color: #5751511b !important;
 }
 
 nav.navbar .navbar-nav{
@@ -135,7 +170,11 @@ nav.navbar .toolbar .lang ul{
     -moz-transition: transform 0.5s;
     -ms-transition: transform 0.5s;
     -o-transition: transform 0.5s;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
 }
+
 .card.zoom:hover img{
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
@@ -165,4 +204,30 @@ nav.navbar .toolbar .lang ul{
    bottom:0;
    background-color: rgba(0, 0, 0, 0.591);
    z-index: 3;
+}
+
+.card.zoom .card-subtitle{
+    font-size: 0.7rem;
+    color: #222121;
+}
+
+.card.zoom .card-title{
+    font-size:1.7rem;
+    font-family: AudiType-Normal;
+}
+
+
+.properties{
+    margin-top: 150px;
+}
+
+.properties .row[class^="col"]{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.properties .row:last-child{
+    margin-top: 150px;
 }
