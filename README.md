@@ -1,9 +1,17 @@
-#MyAudiClone
+MyAudiClone
 
 This project is a clone of Audi's website, created using HTML, CSS, and JavaScript. The purpose of this project is to showcase my web development skills and to practice building a responsive, feature-rich website.
 
-Technologies Used HTML/ CSS/ JavaScript/ Bootstrap/ Font Awesome
-Screenshots
+Technologies Used HTML
+
+CSS
+
+JavaScript
+
+Bootstrap
+
+Font Awesome
+
 
 Installation To install and run this project locally, follow these steps:
 
