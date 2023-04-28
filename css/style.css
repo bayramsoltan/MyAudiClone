@@ -216,18 +216,21 @@ nav.navbar .toolbar .lang ul{
     font-family: AudiType-Normal;
 }
 
-
 .properties{
-    margin-top: 150px;
+    margin-top:150px;
 }
-
-.properties .row[class^="col"]{
+.properties .row [class^="col-"]{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
-
 .properties .row:last-child{
-    margin-top: 150px;
+    margin-top:150px;
+}
+.properties h3{
+    font-family: AudiType-ExtendedNormal;
+}
+.properties p{
+    font-family: AudiType-WideNormal;
 }
